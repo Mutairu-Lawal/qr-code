@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --slate-300: hsl(212, 45%, 89%);
+  --slate-500: hsl(216, 15%, 48%);
+  --slate-900: hsl(218, 44%, 22%);
+  --outfit-ff: "Outfit", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: var(--outfit-ff);
+}
+
+body {
+  font-size: 15px;
+  min-height: 100dvh;
+  display: grid;
+  place-content: center;
+  background: var(--slate-300);
+}
+
+.outfit-bold {
+  font: 700 22px/120% var(--outfit-ff);
+  color: var(--slate-900);
+}
+
+.outfit-regular {
+  font: 400 15px/140% var(--outfit-ff);
+  color: var(--slate-500);
+  letter-spacing: 0.2px;
+}
+
+.card {
+  width: 320px;
+  padding: 16px 16px 40px;
+  border-radius: 20px;
+  background: var(--white);
+}
+
+.card .qr-code {
+  width: 288px;
+  height: 288px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+
+.img-fit {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.card .info {
+  display: flex;
+  flex-direction: column;
+  padding: 0 16px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+}
+
+.attribution {
+  margin-top: 2em;
+}
